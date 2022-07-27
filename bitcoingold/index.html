@@ -6,27 +6,7 @@
 <meta name="description" content="A lightweight, client-side, reliable, fast, open-source universal paper wallet generator supporting almost every major cryptocurrency">
 <meta name="keywords" content="minimal, reliable, fast, universal, paper, wallet, generator, offline, pwall, btg, bitcoin, gold, cryptocurrency">
 <link rel="shortcut icon" href="../favicon.ico">
-<!-- The MIT License (MIT)
 
-Copyright (c) 2021 pwall.org
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE. -->
 <style>
 body{background-color: #f6f5f2;font-family: Arial, Helvetica, sans-serif;font-size: 14px;}
 #container{margin: auto;max-width: 500px;}#titleLabel{font-weight:normal;}
@@ -43,6 +23,8 @@ td,th{border: 2px solid #dedede;text-align: left;padding: 5px;}
 </head>
 <body onload="generate()">
 <div id="container">
+  
+<!--Editar texto abajo -->
 <h3>Crypto wallet <span id="titleLabel">- a lightweight, open-source, universal paper wallet generator</span></h3>
 <div class="noprint"><button class="button button2" onclick="generate()">Generate</button>
 <button class="button button1" onclick="window.print()">Print</button>
@@ -63,53 +45,13 @@ td,th{border: 2px solid #dedede;text-align: left;padding: 5px;}
 <br><b>3. Public Address</b> is used to receive or deposit funds to this paper wallet. You can share the address with others.
 <br><b>4. Private key</b> is used to spend funds stored in this wallet. Do not share the private key!</small></td></tr>
 </table>
-<div id="footer" class="noprint"><br>See <a href="https://github.com/Toradokan/wallet" target=_blank>Github repository</a> for more info. <a href="https://github.com/Toradokan/wallet/releases" target=_blank>(Download zip).</a>
-<div id="update"></div>
-<br>Copyright &copy; 2022 zonappers.com. Copyright and licensing notices included in the source code.</div></div>
+
+  <!-- Editar las líneas de abajo --> 
+<br>Copyright &copy; 2022 Jorge Sanz Copyright and licensing notices included in the source code.</div></div>
 <script src="../js/bitcoinjs-lib.js"></script>
-<!-- The MIT License (MIT)
 
-Copyright (c) 2011-2018 bitcoinjs-lib contributors
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE. -->
 <script src="../js/qrcode.js"></script>
-<!-- The MIT License (MIT)
 
-Copyright (c) 2012 davidshimjs
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE. -->
 <script>
 function generate() {
 const btg = bitcoin.networks.bitcoin;
